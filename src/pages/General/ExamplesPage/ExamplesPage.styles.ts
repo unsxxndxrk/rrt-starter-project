@@ -2,6 +2,9 @@ import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
 const useExamplesPageStyles = makeStyles((theme: Theme) =>
   createStyles({
+    root: {
+      paddingTop: "50px",
+    },
     example: {
       marginBottom: "30px",
       "&:last-child": {
@@ -9,7 +12,7 @@ const useExamplesPageStyles = makeStyles((theme: Theme) =>
       },
     },
     exampleBox: {
-      paddingTop: "20px",
+      paddingTop: "30px",
     },
   }),
 );

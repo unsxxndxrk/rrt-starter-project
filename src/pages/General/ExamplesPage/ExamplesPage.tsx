@@ -6,7 +6,7 @@ import { useExamplesPageStyles } from "./ExamplesPage.styles";
 const ExamplesPage = () => {
   const classes = useExamplesPageStyles();
   return (
-    <Box>
+    <Box className={classes.root}>
       <div className={classes.example}>
         <Typography component="h2" variant="h2" align="center">
           Form validation with Formik

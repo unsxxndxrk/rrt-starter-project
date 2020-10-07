@@ -1,5 +1,5 @@
 import { Button, TextField } from "@material-ui/core";
-import { useFormik } from "formik/dist/Formik";
+import { useFormik } from "formik";
 import React from "react";
 import { useSecondaryButtonStyles } from "../../../../../styles/SecondaryButton";
 import { formInitialValues, FormValidationSchema } from "./Form.consts";
@@ -11,7 +11,7 @@ const Form = () => {
   const secondaryButtonStyles = useSecondaryButtonStyles();
 
   const onFormSubmit = (data: FormValues) => {
-    console.log("Form submited: ", data);
+    alert(`Email: ${data.email}\nPassword: ${data.password}`);
   };
 
   const formik = useFormik<FormValues>({
@@ -25,12 +25,9 @@ const Form = () => {
     values,
     touched,
     errors,
-    // handleBlur,
+    handleBlur,
     handleChange,
-    // handleSubmit,
-    // setFieldValue,
-    submitForm,
-    // resetForm,
+    handleSubmit,
   } = formik;
 
   const hasError = (name: keyof FormValues): boolean => {
@@ -38,35 +35,39 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={submitForm}>
+    <form onSubmit={handleSubmit} className={classes.form}>
       <div className={classes.formGroup}>
         <TextField
           id="email"
           name="email"
-          placeholder="youremail@example.com"
           error={hasError("email")}
           fullWidth
           type="email"
           value={values.email}
           onChange={handleChange}
+          label="Email"
+          variant="outlined"
+          onBlur={handleBlur}
         />
         {hasError("email") && (
-          <div className={classes.errorLine}>{"Error"}</div>
+          <div className={classes.errorLine}>{errors.email}</div>
         )}
       </div>
       <div className={classes.formGroup}>
         <TextField
           id="password"
           name="password"
-          placeholder="Password"
           error={hasError("password")}
           fullWidth
           type="password"
           value={values.password}
           onChange={handleChange}
+          label="Password"
+          variant="outlined"
+          onBlur={handleBlur}
         />
         {hasError("password") && (
-          <div className={classes.errorLine}>{"Error"}</div>
+          <div className={classes.errorLine}>{errors.password}</div>
         )}
       </div>
       <div className={classes.formGroup}>

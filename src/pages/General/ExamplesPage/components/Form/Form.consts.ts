@@ -10,12 +10,13 @@ export const formInitialValues: FormValues = {
 export const FormValidationSchema = Yup.object({
   email: Yup.string()
     .trim()
-    .matches(passwordRegExp)
-    .typeError("invalid_email")
-    .required("empty"),
+    .matches(emailRegExp, "Invalid email format")
+    .required("Should not be empty"),
   password: Yup.string()
     .trim()
-    .matches(emailRegExp)
-    .typeError("invalid_passwd")
-    .required("empty"),
+    .matches(
+      passwordRegExp,
+      "Password must contain at least 8 characters, one uppercase letter, one lowercase letter and a digit",
+    )
+    .required("Should not be empty"),
 });
