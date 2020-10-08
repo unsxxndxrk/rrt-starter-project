@@ -6,9 +6,14 @@ const useExamplesPageStyles = makeStyles((theme: Theme) =>
       paddingTop: "50px",
     },
     example: {
-      marginBottom: "30px",
-      "&:last-child": {
-        marginBottom: "0",
+      background: "#ececec",
+      borderRadius: "10px",
+      padding: "50px 0",
+      marginBottom: "80px",
+      transition: "all .3s ease",
+
+      "&:hover": {
+        boxShadow: "0 0 20px rgba(0, 0, 0, .15)",
       },
     },
     exampleBox: {
