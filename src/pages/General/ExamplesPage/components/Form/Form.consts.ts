@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-import { emailRegExp, passwordRegExp } from "../../../../../constants/regExps";
+import { emailRegExp, passwordRegExp } from "constants/regExps";
 import { FormValues } from "./Form.types";
 
 export const formInitialValues: FormValues = {

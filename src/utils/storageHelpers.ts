@@ -1,4 +1,4 @@
-import { APP_DEFAULT_LANGUAGE } from "../constants/settings";
+import { APP_DEFAULT_LANGUAGE } from "constants/settings";
 
 export const uiLanguage = (() => {
   const getKey = () => "i18nextLng";

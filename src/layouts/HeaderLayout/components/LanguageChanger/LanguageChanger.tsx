@@ -1,10 +1,10 @@
 import React from "react";
-import { Languages } from "../../../../types/common/Languages";
-import { enumToStringArray } from "../../../../utils/enumToStringArray";
+import { Languages } from "types/common/Languages";
+import { enumToStringArray } from "utils/enumToStringArray";
 import { useLanguageChangerStyles } from "./LanguageChanger.styles";
 import { useTranslation } from "react-i18next";
 import cx from "classnames";
-import { uiLanguage } from "../../../../utils/storageHelpers";
+import { uiLanguage } from "utils/storageHelpers";
 
 const LanguageChanger = () => {
   const appLanguages = enumToStringArray(Languages);

@@ -1,12 +1,12 @@
 import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
-import { uiLanguage } from "./utils/storageHelpers";
-import { Languages } from "./types/common/Languages";
-import { APP_DEFAULT_LANGUAGE } from "./constants/settings";
-import { enTranslation } from "./locales/enTranslation";
-import { ruTranslation } from "./locales/ruTranslation";
-import { createBundle } from "./utils/createBundle";
+import { uiLanguage } from "utils/storageHelpers";
+import { Languages } from "types/common/Languages";
+import { APP_DEFAULT_LANGUAGE } from "constants/settings";
+import { enTranslation } from "locales/enTranslation";
+import { ruTranslation } from "locales/ruTranslation";
+import { createBundle } from "utils/createBundle";
 
 export enum Namespaces {
   Common = "common",

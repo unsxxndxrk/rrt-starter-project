@@ -1,8 +1,8 @@
 import { Button, TextField } from "@material-ui/core";
 import { useFormik } from "formik";
 import React from "react";
-import { Namespaces } from "../../../../../i18n";
-import { useSecondaryButtonStyles } from "../../../../../styles/SecondaryButton";
+import { Namespaces } from "i18n";
+import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { formInitialValues, FormValidationSchema } from "./Form.consts";
 import { useFormStyles } from "./Form.styles";
 import { FormValues } from "./Form.types";

@@ -1,10 +1,10 @@
 import { Box, Typography } from "@material-ui/core";
 import React from "react";
-import Counter from "./components/Counter/Counter";
-import Form from "./components/Form/Form";
 import { useExamplesPageStyles } from "./ExamplesPage.styles";
 import { useTranslation } from "react-i18next";
-import { Namespaces } from "../../../i18n";
+import { Namespaces } from "i18n";
+import Counter from "./components/Counter/Counter";
+import Form from "./components/Form/Form";
 
 const ExamplesPage = () => {
   const classes = useExamplesPageStyles();

@@ -1,6 +1,6 @@
 import { Box, Typography } from "@material-ui/core";
 import React from "react";
-import { Namespaces } from "../../../i18n";
+import { Namespaces } from "i18n";
 import { useAboutPageStyles } from "./AboutPage.styles";
 import { useTranslation } from "react-i18next";
 

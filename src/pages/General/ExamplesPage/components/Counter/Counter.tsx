@@ -1,13 +1,10 @@
 import { Box, Button } from "@material-ui/core";
 import React from "react";
 import { connect, ConnectedProps, useDispatch } from "react-redux";
-import { Namespaces } from "../../../../../i18n";
-import {
-  decreaseCounter,
-  increaseCounter,
-} from "../../../../../redux/Counter/actions";
-import { RootState } from "../../../../../redux/store";
-import { useSecondaryButtonStyles } from "../../../../../styles/SecondaryButton";
+import { Namespaces } from "i18n";
+import { decreaseCounter, increaseCounter } from "redux/Counter/actions";
+import { RootState } from "redux/store";
+import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useCounterStyles } from "./Counter.styles";
 import { useTranslation } from "react-i18next";
 

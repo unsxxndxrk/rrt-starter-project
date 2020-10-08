@@ -1,9 +1,9 @@
-import GeneralRoutes from "../../constants/generalRoutes";
+import GeneralRoutes from "constants/generalRoutes";
 import React from "react";
 import { useHeaderLayoutStyles } from "./HeaderLayout.styles";
 import { Link } from "react-router-dom";
 import { Box, Grid } from "@material-ui/core";
-import { Namespaces } from "../../i18n";
+import { Namespaces } from "i18n";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "./components/LanguageChanger/LanguageChanger";
 
