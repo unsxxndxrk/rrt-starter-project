@@ -1,14 +1,18 @@
 import { Button, TextField } from "@material-ui/core";
 import { useFormik } from "formik";
 import React from "react";
+import { Namespaces } from "../../../../../i18n";
 import { useSecondaryButtonStyles } from "../../../../../styles/SecondaryButton";
 import { formInitialValues, FormValidationSchema } from "./Form.consts";
 import { useFormStyles } from "./Form.styles";
 import { FormValues } from "./Form.types";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
   const classes = useFormStyles();
   const secondaryButtonStyles = useSecondaryButtonStyles();
+
+  const { t } = useTranslation(Namespaces.Examples);
 
   const onFormSubmit = (data: FormValues) => {
     alert(`Email: ${data.email}\nPassword: ${data.password}`);
@@ -45,12 +49,14 @@ const Form = () => {
           type="email"
           value={values.email}
           onChange={handleChange}
-          label="Email"
+          label={t("form.fields.email.placeholder")}
           variant="outlined"
           onBlur={handleBlur}
         />
         {hasError("email") && (
-          <div className={classes.errorLine}>{errors.email}</div>
+          <div className={classes.errorLine}>
+            {t(`form.fields.email.errors.${errors.email}`)}
+          </div>
         )}
       </div>
       <div className={classes.formGroup}>
@@ -62,12 +68,14 @@ const Form = () => {
           type="password"
           value={values.password}
           onChange={handleChange}
-          label="Password"
+          label={t("form.fields.password.placeholder")}
           variant="outlined"
           onBlur={handleBlur}
         />
         {hasError("password") && (
-          <div className={classes.errorLine}>{errors.password}</div>
+          <div className={classes.errorLine}>
+            {t(`form.fields.password.errors.${errors.password}`)}
+          </div>
         )}
       </div>
       <div className={classes.formGroup}>
@@ -76,7 +84,7 @@ const Form = () => {
           variant="contained"
           className={secondaryButtonStyles.root}
         >
-          Submit
+          {t("form.buttons.submit")}
         </Button>
       </div>
     </form>

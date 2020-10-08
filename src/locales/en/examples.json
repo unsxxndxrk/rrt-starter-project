@@ -1,0 +1,31 @@
+{
+  "form": {
+    "label": "Form validation with Formik",
+    "fields": {
+      "email": {
+        "placeholder": "Email",
+        "errors": {
+          "empty": "Should not be empty",
+          "invalid_format": "Invalid email format"
+        }
+      },
+      "password": {
+        "placeholder": "Password",
+        "errors": {
+          "empty": "Should not be empty",
+          "invalid_format": "Password must contain at least 8 characters, one uppercase letter, one lowercase letter and a digit"
+        }
+      }
+    },
+    "buttons": {
+      "submit": "Submit"
+    }
+  },
+  "counter": {
+    "label": "Counter state with Redux",
+    "buttons": {
+      "increase": "Increase",
+      "decrease": "Decrease"
+    }
+  }
+}

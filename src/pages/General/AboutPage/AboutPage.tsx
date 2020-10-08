@@ -1,20 +1,24 @@
 import { Box, Typography } from "@material-ui/core";
 import React from "react";
+import { Namespaces } from "../../../i18n";
 import { useAboutPageStyles } from "./AboutPage.styles";
+import { useTranslation } from "react-i18next";
 
 const AboutPage = () => {
   const classes = useAboutPageStyles();
+  const { t } = useTranslation(Namespaces.About);
+
   return (
     <Box>
       <Typography component="h1" variant="h1">
-        About
+        {t("label")}
       </Typography>
-      <Typography component="p" className={classes.p}>
-        A starter project for developing user interfaces with <b>React</b>,
-        <b> Redux</b> and <b>TypeScript</b>. Includes a set of basic commonly
-        used modules such as: ESLint, Material UI, Formik, I18next and others
-        (see package.json). The project contains several ready-made basic
-        solutions for a quick start (you can see them in the Examples section).
+      <Typography
+        component="p"
+        className={classes.p}
+        data-i18n="[html]content.body"
+      >
+        {t("description")}
       </Typography>
       <a
         href="https://github.com/unsxxndxrk/rrt-starter-project"
@@ -22,7 +26,7 @@ const AboutPage = () => {
         rel="noopener noreferrer"
         className={classes.a}
       >
-        GitHub repository
+        {t("repository")}
       </a>
     </Box>
   );

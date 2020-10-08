@@ -4,6 +4,7 @@ export const useHeaderLayoutStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       padding: "30px 0",
+      position: "relative",
     },
     nav: {
       "& a": {

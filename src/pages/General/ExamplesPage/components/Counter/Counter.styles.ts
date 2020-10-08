@@ -12,11 +12,15 @@ const useCounterStyles = makeStyles((theme: Theme) =>
       fontWeight: "bold",
     },
     buttonBox: {
-      width: "200px",
+      width: "max-content",
       margin: "0 auto",
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
+
+      "& button": {
+        margin: "0 5px",
+      },
     },
   }),
 );

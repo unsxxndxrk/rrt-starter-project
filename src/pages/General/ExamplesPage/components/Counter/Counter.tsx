@@ -1,6 +1,7 @@
 import { Box, Button } from "@material-ui/core";
 import React from "react";
 import { connect, ConnectedProps, useDispatch } from "react-redux";
+import { Namespaces } from "../../../../../i18n";
 import {
   decreaseCounter,
   increaseCounter,
@@ -8,6 +9,7 @@ import {
 import { RootState } from "../../../../../redux/store";
 import { useSecondaryButtonStyles } from "../../../../../styles/SecondaryButton";
 import { useCounterStyles } from "./Counter.styles";
+import { useTranslation } from "react-i18next";
 
 const mapStateToProps = (state: RootState) => ({
   counterReducer: state.counterReducer,
@@ -22,6 +24,8 @@ const Counter = (props: CounterProps) => {
   const dispatch = useDispatch();
   const classes = useCounterStyles();
   const secondaryButtonStyles = useSecondaryButtonStyles();
+
+  const { t } = useTranslation(Namespaces.Examples);
 
   const handleIncrease = () => {
     dispatch(increaseCounter());
@@ -43,7 +47,7 @@ const Counter = (props: CounterProps) => {
           className={secondaryButtonStyles.root}
           onClick={handleDecrease}
         >
-          Decrease
+          {t("counter.buttons.decrease")}
         </Button>
         <Button
           type="button"
@@ -51,7 +55,7 @@ const Counter = (props: CounterProps) => {
           className={secondaryButtonStyles.root}
           onClick={handleIncrease}
         >
-          Increase
+          {t("counter.buttons.increase")}
         </Button>
       </div>
     </Box>

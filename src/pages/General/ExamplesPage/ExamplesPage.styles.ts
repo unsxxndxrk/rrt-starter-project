@@ -9,7 +9,7 @@ const useExamplesPageStyles = makeStyles((theme: Theme) =>
       background: "#ececec",
       borderRadius: "10px",
       padding: "50px 0",
-      marginBottom: "80px",
+      marginBottom: "30px",
       transition: "all .3s ease",
 
       "&:hover": {

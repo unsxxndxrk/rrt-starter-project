@@ -1,0 +1,5 @@
+{
+  "label": "About",
+  "description": "A starter project for developing user interfaces with React, Redux and TypeScript. Includes a set of basic commonly used modules such as: ESLint, Material UI, Formik, I18next and others (see package.json). The project contains several ready-made basic solutions for a quick start (you can see them in the Examples section).",
+  "repository": "GitHub repository"
+}
