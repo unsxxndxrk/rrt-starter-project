@@ -1,6 +1,6 @@
 import GeneralRoutes from "constants/generalRoutes";
 import React from "react";
-import { useHeaderLayoutStyles } from "./HeaderLayout.styles";
+import { useHeaderStyles } from "./Header.styles";
 import { Link } from "react-router-dom";
 import { Box, Grid } from "@material-ui/core";
 import { Namespaces } from "i18n";
@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import LanguageChanger from "./components/LanguageChanger/LanguageChanger";
 
 const HeaderLayout = () => {
-  const classes = useHeaderLayoutStyles();
+  const classes = useHeaderStyles();
   const { t } = useTranslation(Namespaces.Common);
 
   return (

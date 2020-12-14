@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-export const useHeaderLayoutStyles = makeStyles((theme: Theme) =>
+export const useHeaderStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       padding: "30px 0",

@@ -1,6 +1,6 @@
 import React from "react";
 import { useMainLayoutStyles } from "./MainLayout.styles";
-import Header from "../HeaderLayout/HeaderLayout";
+import Header from "components/Header/Header";
 import { Box, Container, Divider } from "@material-ui/core";
 
 type MainLayoutProps = {
