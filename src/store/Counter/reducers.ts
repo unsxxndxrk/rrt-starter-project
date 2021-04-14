@@ -8,10 +8,7 @@ const initialCounterState: CounterInitialStateType = {
   counter: 0,
 };
 
-export const counterReducer = (
-  state = initialCounterState,
-  action: CounterActionTypes,
-) => {
+const counter = (state = initialCounterState, action: CounterActionTypes) => {
   switch (action.type) {
     case CounterActions.INCREASE:
       return {
@@ -27,3 +24,5 @@ export const counterReducer = (
       return state;
   }
 };
+
+export { counter };

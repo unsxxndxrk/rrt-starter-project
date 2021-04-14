@@ -34,4 +34,4 @@ function AboutView() {
   );
 }
 
-export default AboutView;
+export { AboutView };

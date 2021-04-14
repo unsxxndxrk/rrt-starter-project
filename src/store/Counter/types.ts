@@ -1,6 +1,6 @@
 export enum CounterActions {
-  INCREASE = "INCREASE",
-  DECREASE = "DECREASE",
+  INCREASE = "counter/INCREASE",
+  DECREASE = "counter/DECREASE",
 }
 
 export type CounterInitialStateType = {

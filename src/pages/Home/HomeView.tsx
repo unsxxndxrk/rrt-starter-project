@@ -1,4 +1,4 @@
-import { useHomePageStyles } from "./HomePage.styles";
+import { useHomeStyles } from "./Home.styles";
 import rrtLogo from "assets/images/RRT_MAIN.svg";
 import { Box, Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -8,11 +8,10 @@ import { useTranslation } from "react-i18next";
 import { Namespaces } from "i18n";
 import { MainLayout } from "layouts/MainLayout/MainLayout";
 
-const HomePage = () => {
-  const classes = useHomePageStyles();
-  const secondaryButtonStyles = useSecondaryButtonStyles();
-
+function HomeView() {
   const { t } = useTranslation(Namespaces.Home);
+  const classes = useHomeStyles();
+  const secondaryButtonStyles = useSecondaryButtonStyles();
 
   return (
     <MainLayout>
@@ -38,6 +37,6 @@ const HomePage = () => {
       </Box>
     </MainLayout>
   );
-};
+}
 
-export default HomePage;
+export { HomeView };

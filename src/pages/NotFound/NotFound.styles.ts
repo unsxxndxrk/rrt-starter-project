@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-const useNotFoundPageStyles = makeStyles((theme: Theme) =>
+const useNotFoundStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       height: "100vh",
@@ -18,4 +18,4 @@ const useNotFoundPageStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export { useNotFoundPageStyles };
+export { useNotFoundStyles };

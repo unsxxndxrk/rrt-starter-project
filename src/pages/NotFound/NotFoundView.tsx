@@ -2,10 +2,10 @@ import { Box, Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { generalRoutes } from "constants/generalRoutes";
 import { useSecondaryButtonStyles } from "styles/SecondaryButton";
-import { useNotFoundPageStyles } from "./NotFoundPage.styles";
+import { useNotFoundStyles } from "./NotFound.styles";
 
-const NotFoundPage = () => {
-  const classes = useNotFoundPageStyles();
+function NotFoundView() {
+  const classes = useNotFoundStyles();
   const secondaryButtonStyles = useSecondaryButtonStyles();
 
   return (
@@ -24,6 +24,6 @@ const NotFoundPage = () => {
       </div>
     </Box>
   );
-};
+}
 
-export default NotFoundPage;
+export { NotFoundView };

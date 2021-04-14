@@ -1,13 +1,18 @@
-import { CounterActions } from "./types";
+import { CounterActions, CounterActionTypes } from "./types";
 
-export const increaseCounter = () => {
+const increaseCounterAction = (): CounterActionTypes => {
   return {
     type: CounterActions.INCREASE,
   };
 };
 
-export const decreaseCounter = () => {
+const decreaseCounterAction = (): CounterActionTypes => {
   return {
     type: CounterActions.DECREASE,
   };
+};
+
+export const counterActions = {
+  increase: increaseCounterAction,
+  decrease: decreaseCounterAction,
 };
