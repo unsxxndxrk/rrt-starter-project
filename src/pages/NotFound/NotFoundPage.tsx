@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import GeneralRoutes from "constants/generalRoutes";
+import { generalRoutes } from "constants/generalRoutes";
 import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useNotFoundPageStyles } from "./NotFoundPage.styles";
 
@@ -16,7 +16,7 @@ const NotFoundPage = () => {
         </Typography>
         <div className={classes.code}>404</div>
 
-        <Link to={GeneralRoutes.HOME}>
+        <Link to={generalRoutes.HOME}>
           <Button variant="contained" className={secondaryButtonStyles.root}>
             Home
           </Button>

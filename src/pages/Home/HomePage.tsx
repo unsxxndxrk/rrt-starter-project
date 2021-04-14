@@ -2,7 +2,7 @@ import { useHomePageStyles } from "./HomePage.styles";
 import rrtLogo from "assets/images/RRT_MAIN.svg";
 import { Box, Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import generalRoutes from "constants/generalRoutes";
+import { generalRoutes } from "constants/generalRoutes";
 import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useTranslation } from "react-i18next";
 import { Namespaces } from "i18n";

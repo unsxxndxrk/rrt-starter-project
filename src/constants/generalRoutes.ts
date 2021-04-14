@@ -1,7 +1,7 @@
-export const GeneralRoutes = {
+const generalRoutes = {
   HOME: "/",
   EXAMPLES: "/examples",
   ABOUT: "/about",
 };
 
-export default GeneralRoutes;
+export { generalRoutes };

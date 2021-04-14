@@ -1,19 +1,15 @@
-import { Languages } from "types/common/Languages";
-import { enumToStringArray } from "utils/enumToStringArray";
 import { useLanguageChangerStyles } from "./LanguageChanger.styles";
-import { useTranslation } from "react-i18next";
 import cx from "classnames";
 
-function LanguageChanger() {
-  const appLanguages = enumToStringArray(Languages);
+type LanguageChangerViewProps = {
+  appLanguages: string[];
+  currentLanguage: string;
+  onLanguageChange: (nextLang: string) => void;
+};
+
+function LanguageChangerView(props: LanguageChangerViewProps) {
+  const { appLanguages, currentLanguage, onLanguageChange } = props;
   const classes = useLanguageChangerStyles();
-
-  const { i18n } = useTranslation();
-  const currentLanguage = i18n.language;
-
-  const handgeLanguageChange = (nextLang: string) => {
-    i18n.changeLanguage(nextLang);
-  };
 
   return (
     <div className={classes.root}>
@@ -24,7 +20,7 @@ function LanguageChanger() {
               className={cx(classes.lang, {
                 active: currentLanguage === l,
               })}
-              onClick={() => handgeLanguageChange(l)}
+              onClick={() => onLanguageChange(l)}
             >
               {l}
             </div>
@@ -35,4 +31,4 @@ function LanguageChanger() {
   );
 }
 
-export { LanguageChanger };
+export { LanguageChangerView };
