@@ -49,4 +49,4 @@ const createI18nInstance = ({
 
 const i18n = createI18nInstance({ language: uiLanguage.get() });
 
-export default i18n;
+export { i18n };

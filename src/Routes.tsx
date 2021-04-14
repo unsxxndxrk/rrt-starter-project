@@ -5,7 +5,7 @@ import { About } from "pages/About/About";
 import { NotFound } from "pages/NotFound/NotFound";
 import { Examples } from "pages/Examples/Examples";
 
-export default function Routes() {
+function Routes() {
   return (
     <Switch>
       <Route exact path={generalRoutes.HOME} component={Home} />
@@ -15,3 +15,5 @@ export default function Routes() {
     </Switch>
   );
 }
+
+export { Routes };

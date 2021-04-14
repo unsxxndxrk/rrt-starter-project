@@ -1,5 +1,5 @@
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import Routes from "Routes";
+import { Routes } from "Routes";
 import { appTheme } from "theme";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Router } from "react-router-dom";
@@ -20,4 +20,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export { App };
