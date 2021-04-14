@@ -1,17 +1,15 @@
-import React from "react";
 import { Languages } from "types/common/Languages";
 import { enumToStringArray } from "utils/enumToStringArray";
 import { useLanguageChangerStyles } from "./LanguageChanger.styles";
 import { useTranslation } from "react-i18next";
 import cx from "classnames";
-import { uiLanguage } from "utils/storageHelpers";
 
 const LanguageChanger = () => {
   const appLanguages = enumToStringArray(Languages);
   const classes = useLanguageChangerStyles();
 
   const { i18n } = useTranslation();
-  const currentLanguage = uiLanguage.get();
+  const currentLanguage = i18n.language;
 
   const handgeLanguageChange = (nextLang: string) => {
     i18n.changeLanguage(nextLang);

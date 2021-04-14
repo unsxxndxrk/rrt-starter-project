@@ -4,9 +4,13 @@ import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { uiLanguage } from "utils/storageHelpers";
 import { Languages } from "types/common/Languages";
 import { APP_DEFAULT_LANGUAGE } from "constants/settings";
-import { enTranslation } from "locales/enTranslation";
-import { ruTranslation } from "locales/ruTranslation";
-import { createBundle } from "utils/createBundle";
+import { enTranslations } from "locales/enTranslations";
+import { ruTranslations } from "locales/ruTranslations";
+
+const resources = {
+  en: enTranslations,
+  ru: ruTranslations,
+};
 
 export enum Namespaces {
   Common = "common",
@@ -26,15 +30,13 @@ const createI18nInstance = ({
     .use(initReactI18next)
     .init({
       lng: language,
+      fallbackLng: APP_DEFAULT_LANGUAGE,
+      supportedLngs: Object.values(Languages),
+      resources,
       ns: Object.values(Namespaces),
-      preload: Object.values(Languages),
-      resources: {
-        en: createBundle(Namespaces, enTranslation),
-        ru: createBundle(Namespaces, ruTranslation),
-      },
+      load: "languageOnly",
       react: {
-        wait: true,
-        useSuspense: false,
+        useSuspense: true,
         bindI18n: "languageChanged",
       },
       interpolation: {
@@ -45,6 +47,6 @@ const createI18nInstance = ({
   return instance;
 };
 
-const commonI18n = createI18nInstance({ language: uiLanguage.get() });
+const i18n = createI18nInstance({ language: uiLanguage.get() });
 
-export default commonI18n;
+export default i18n;
