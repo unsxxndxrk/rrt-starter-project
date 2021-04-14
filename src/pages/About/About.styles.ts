@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-const useAboutPageStyles = makeStyles((theme: Theme) =>
+const useAboutStyles = makeStyles((theme: Theme) =>
   createStyles({
     p: {
       marginTop: "15px",
@@ -23,4 +23,4 @@ const useAboutPageStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export { useAboutPageStyles };
+export { useAboutStyles };

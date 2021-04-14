@@ -4,7 +4,7 @@ import { useLanguageChangerStyles } from "./LanguageChanger.styles";
 import { useTranslation } from "react-i18next";
 import cx from "classnames";
 
-const LanguageChanger = () => {
+function LanguageChanger() {
   const appLanguages = enumToStringArray(Languages);
   const classes = useLanguageChangerStyles();
 
@@ -33,6 +33,6 @@ const LanguageChanger = () => {
         ))}
     </div>
   );
-};
+}
 
-export default LanguageChanger;
+export { LanguageChanger };

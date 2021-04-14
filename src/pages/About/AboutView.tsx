@@ -1,11 +1,11 @@
 import { Box, Typography } from "@material-ui/core";
 import { Namespaces } from "i18n";
-import { useAboutPageStyles } from "./AboutPage.styles";
+import { useAboutStyles } from "./About.styles";
 import { useTranslation } from "react-i18next";
 import MainLayout from "layouts/MainLayout/MainLayout";
 
-const AboutPage = () => {
-  const classes = useAboutPageStyles();
+function AboutView() {
+  const classes = useAboutStyles();
   const { t } = useTranslation(Namespaces.About);
 
   return (
@@ -32,6 +32,6 @@ const AboutPage = () => {
       </Box>
     </MainLayout>
   );
-};
+}
 
-export default AboutPage;
+export default AboutView;

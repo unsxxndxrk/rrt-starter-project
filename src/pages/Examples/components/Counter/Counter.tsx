@@ -1,5 +1,5 @@
 import { Box, Button } from "@material-ui/core";
-import { connect, ConnectedProps, useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Namespaces } from "i18n";
 import { decreaseCounter, increaseCounter } from "store/Counter/actions";
 import { RootState } from "store";
@@ -7,16 +7,8 @@ import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useCounterStyles } from "./Counter.styles";
 import { useTranslation } from "react-i18next";
 
-const mapStateToProps = (state: RootState) => ({
-  counterReducer: state.counterReducer,
-});
-
-const connector = connect(mapStateToProps);
-type PropsFromRedux = ConnectedProps<typeof connector>;
-type CounterProps = PropsFromRedux & {};
-
-const Counter = (props: CounterProps) => {
-  const { counter } = props.counterReducer;
+function Counter() {
+  const { counter } = useSelector((state: RootState) => state.counterReducer);
   const dispatch = useDispatch();
   const classes = useCounterStyles();
   const secondaryButtonStyles = useSecondaryButtonStyles();
@@ -56,6 +48,6 @@ const Counter = (props: CounterProps) => {
       </div>
     </Box>
   );
-};
+}
 
-export default connector(Counter);
+export default Counter;

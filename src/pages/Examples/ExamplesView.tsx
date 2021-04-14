@@ -1,13 +1,13 @@
 import { Box, Typography } from "@material-ui/core";
-import { useExamplesPageStyles } from "./ExamplesPage.styles";
+import { useExamplesStyles } from "./Examples.styles";
 import { useTranslation } from "react-i18next";
 import { Namespaces } from "i18n";
 import Counter from "./components/Counter/Counter";
 import Form from "./components/Form/Form";
 import MainLayout from "layouts/MainLayout/MainLayout";
 
-const ExamplesPage = () => {
-  const classes = useExamplesPageStyles();
+function ExamplesView() {
+  const classes = useExamplesStyles();
   const { t } = useTranslation(Namespaces.Examples);
 
   return (
@@ -32,6 +32,6 @@ const ExamplesPage = () => {
       </Box>
     </MainLayout>
   );
-};
+}
 
-export default ExamplesPage;
+export default ExamplesView;

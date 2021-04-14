@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { Box, Grid } from "@material-ui/core";
 import { Namespaces } from "i18n";
 import { useTranslation } from "react-i18next";
-import LanguageChanger from "./components/LanguageChanger/LanguageChanger";
+import { LanguageChanger } from "./components/LanguageChanger/LanguageChanger";
 
-const HeaderLayout = () => {
+function Header() {
   const classes = useHeaderStyles();
   const { t } = useTranslation(Namespaces.Common);
 
@@ -33,6 +33,6 @@ const HeaderLayout = () => {
       <LanguageChanger />
     </Box>
   );
-};
+}
 
-export default HeaderLayout;
+export { Header };

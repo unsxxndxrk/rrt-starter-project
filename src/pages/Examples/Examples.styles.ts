@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-const useExamplesPageStyles = makeStyles((theme: Theme) =>
+const useExamplesStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       paddingTop: "50px",
@@ -22,4 +22,4 @@ const useExamplesPageStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export { useExamplesPageStyles };
+export { useExamplesStyles };

@@ -1,6 +1,6 @@
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 
-export const useLanguageChangerStyles = makeStyles((theme: Theme) =>
+const useLanguageChangerStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       position: "absolute",
@@ -27,3 +27,5 @@ export const useLanguageChangerStyles = makeStyles((theme: Theme) =>
     },
   }),
 );
+
+export { useLanguageChangerStyles };

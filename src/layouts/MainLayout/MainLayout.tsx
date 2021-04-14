@@ -1,12 +1,12 @@
 import { useMainLayoutStyles } from "./MainLayout.styles";
-import Header from "components/Header/Header";
+import { Header } from "components/Header/Header";
 import { Box, Container, Divider } from "@material-ui/core";
 
 type MainLayoutProps = {
   children: React.ReactNode;
 };
 
-const MainLayout = (props: MainLayoutProps) => {
+function MainLayout(props: MainLayoutProps) {
   const { children } = props;
   const classes = useMainLayoutStyles();
 
@@ -21,6 +21,6 @@ const MainLayout = (props: MainLayoutProps) => {
       </Container>
     </Box>
   );
-};
+}
 
 export default MainLayout;
