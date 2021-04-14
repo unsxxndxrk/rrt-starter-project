@@ -1,4 +1,3 @@
-import React from "react";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import Routes from "Routes";
 import { appTheme } from "theme";

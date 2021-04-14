@@ -1,5 +1,4 @@
 import { Box, Button, Typography } from "@material-ui/core";
-import React from "react";
 import { Link } from "react-router-dom";
 import GeneralRoutes from "constants/generalRoutes";
 import { useSecondaryButtonStyles } from "styles/SecondaryButton";

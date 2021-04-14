@@ -1,5 +1,4 @@
 import { Box, Button } from "@material-ui/core";
-import React from "react";
 import { connect, ConnectedProps, useDispatch } from "react-redux";
 import { Namespaces } from "i18n";
 import { decreaseCounter, increaseCounter } from "store/Counter/actions";

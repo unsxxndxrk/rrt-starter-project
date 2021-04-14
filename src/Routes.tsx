@@ -1,9 +1,9 @@
 import { Route, Switch } from "react-router";
 import GeneralRoutes from "constants/generalRoutes";
-import HomePage from "pages/General/HomePage/HomePage";
-import AboutPage from "pages/General/AboutPage/AboutPage";
-import NotFoundPage from "pages/Common/NotFoundPage/NotFoundPage";
-import ExamplesPage from "pages/General/ExamplesPage/ExamplesPage";
+import HomePage from "pages/HomePage/HomePage";
+import AboutPage from "pages/AboutPage/AboutPage";
+import NotFoundPage from "pages/NotFoundPage/NotFoundPage";
+import ExamplesPage from "pages/ExamplesPage/ExamplesPage";
 
 export default function Routes() {
   return (

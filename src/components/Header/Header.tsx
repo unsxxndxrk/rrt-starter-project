@@ -1,5 +1,4 @@
 import GeneralRoutes from "constants/generalRoutes";
-import React from "react";
 import { useHeaderStyles } from "./Header.styles";
 import { Link } from "react-router-dom";
 import { Box, Grid } from "@material-ui/core";
