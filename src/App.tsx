@@ -5,7 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { Router } from "react-router-dom";
 import { appHistory } from "appHistory";
 import { Provider } from "react-redux";
-import store from "store";
+import { store } from "store";
 
 const App: React.FC = () => {
   return (
