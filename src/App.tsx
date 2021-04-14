@@ -4,12 +4,12 @@ import { appHistory } from "appHistory";
 import { store } from "store";
 import { AppProviders } from "AppProviders";
 
-const App: React.FC = () => {
+function App() {
   return (
     <AppProviders theme={appTheme} history={appHistory} store={store}>
       <Routes />
     </AppProviders>
   );
-};
+}
 
 export { App };
