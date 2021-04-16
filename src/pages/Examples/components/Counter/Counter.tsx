@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { counterActions } from "store/Counter/actions";
+import { counterActions } from "store/counter/actions";
 import { RootState } from "store";
 import { CounterView } from "./CounterView";
 

@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "LeaG",
+    "email": "Illustrious@gmail.com",
+    "city": "Tokyo",
+    "street": "Kulas Light",
+    "zipcode": "12345-6789",
+    "company": "Pop Wood"
+  },
+  {
+    "id": 2,
+    "name": "Honey Avalos",
+    "username": "HAVA",
+    "email": "Crabby@gmail.com",
+    "city": "Amsterdam",
+    "street": "Kulas Light",
+    "zipcode": "32398-1111",
+    "company": "Artisan Code"
+  },
+  {
+    "id": 3,
+    "name": "Charlize Duggan",
+    "username": "CDuggan",
+    "email": "Hard@yahoo.com",
+    "city": "Kyiv",
+    "street": "Kulas Light",
+    "zipcode": "98765-2334",
+    "company": "Tomorrow"
+  },
+  {
+    "id": 4,
+    "name": "Tamzin Bird",
+    "username": "TB76",
+    "email": "Breezy@yahoo.com",
+    "city": "Las Vegas",
+    "street": "Kulas Light",
+    "zipcode": "5555-4444",
+    "company": "ItsWorking Technologies"
+  },
+  {
+    "id": 5,
+    "name": "Rome Whittaker",
+    "username": "rwrwrw",
+    "email": "Silky@yahoo.com",
+    "city": "San Francisco",
+    "street": "Kulas Light",
+    "zipcode": "44445-3333",
+    "company": "Romaguera-Crona"
+  },
+  {
+    "id": 6,
+    "name": "Billy-Joe Milner",
+    "username": "BJMilner",
+    "email": "Murky@biz.com",
+    "city": "Los Angeles",
+    "street": "Kulas Light",
+    "zipcode": "24245-1133",
+    "company": "NotToday inc."
+  },
+  {
+    "id": 7,
+    "name": "Sulaiman Waller",
+    "username": "waller",
+    "email": "Brainy@biz.com",
+    "city": "Washington",
+    "street": "Kulas Light",
+    "zipcode": "324234-343",
+    "company": "RRRARRR"
+  },
+  {
+    "id": 8,
+    "name": "Archer Sandoval",
+    "username": "ASandoval28",
+    "email": "Muddled@biz.com",
+    "city": "Berlin",
+    "street": "Kulas Light",
+    "zipcode": "7657-453",
+    "company": "CGT"
+  },
+  {
+    "id": 9,
+    "name": "Isabell Hodgson",
+    "username": "IsabellH",
+    "email": "Far@biz.info",
+    "city": "Dortmund",
+    "street": "Kulas Light",
+    "zipcode": "21321-5436",
+    "company": "Babubu"
+  },
+  {
+    "id": 10,
+    "name": "Corban Mccartney",
+    "username": "MccartneyC",
+    "email": "Wistful@biz.info",
+    "city": "London",
+    "street": "Kulas Light",
+    "zipcode": "2222-23244",
+    "company": "NoCoolOrg"
+  },
+  {
+    "id": 11,
+    "name": "Darci Lawson",
+    "username": "DarciLawson",
+    "email": "Onerous@biz.info",
+    "city": "New York",
+    "street": "Kulas Light",
+    "zipcode": "134231-23234",
+    "company": "HelloWorldCompany"
+  },
+  {
+    "id": 12,
+    "name": "Onur Hackett",
+    "username": "hakkket",
+    "email": "Chemical@mail.ru",
+    "city": "Moskow",
+    "street": "Kulas Light",
+    "zipcode": "74347-5343",
+    "company": "AbabaHalamaga"
+  },
+  {
+    "id": 13,
+    "name": "Derry Barnett",
+    "username": "DerryBigB",
+    "email": "derry.barnetttt@yahoo.info",
+    "city": "Detroiy",
+    "street": "Pearl Street",
+    "zipcode": "5343",
+    "company": "Samsung"
+  },
+  {
+    "id": 14,
+    "name": "Lia Schaefer",
+    "username": "LS",
+    "email": "ls@mail.ru",
+    "city": "Houston",
+    "street": "Red Brick Roads",
+    "zipcode": "74347",
+    "company": "Xiaomi"
+  },
+  {
+    "id": 15,
+    "name": "Marcus Tapia",
+    "username": "Tapia",
+    "email": "markus.t@gmail.com",
+    "city": "Philadelphia",
+    "street": "Granby Street",
+    "zipcode": "7434",
+    "company": "Google"
+  },
+  {
+    "id": 16,
+    "name": "Reem Hess",
+    "username": "Ree.Hess",
+    "email": "ReemHess@gmail.info",
+    "city": "New York",
+    "street": "Kulas Light",
+    "zipcode": "111-222",
+    "company": "Apple"
+  },
+  {
+    "id": 17,
+    "name": "Kasper Middleton",
+    "username": "MK",
+    "email": "mk@g.com",
+    "city": "Atlanta",
+    "street": "Carson Street",
+    "zipcode": "74347-6666",
+    "company": "Apple"
+  },
+  {
+    "id": 18,
+    "name": "OLeja Wise",
+    "username": "TheWise8",
+    "email": "Oleja.w@yahoo.com",
+    "city": "Boston",
+    "street": "South street",
+    "zipcode": "234325-1",
+    "company": "LLSHT"
+  },
+  {
+    "id": 19,
+    "name": "Joy Noble",
+    "username": "noooblereal",
+    "email": "joy.noble@gmail.com",
+    "city": "Chicago",
+    "street": "West street",
+    "zipcode": "2456-756554",
+    "company": "Apple"
+  },
+  {
+    "id": 20,
+    "name": "Renesmee Gallagher",
+    "username": "RenGallagher",
+    "email": "ren.gal@yahoo.com",
+    "city": "Seattle",
+    "street": "East street",
+    "zipcode": "87654-0988",
+    "company": "Monsters Inc."
+  }
+]

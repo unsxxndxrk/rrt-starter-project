@@ -1,10 +1,6 @@
-import {
-  CounterActions,
-  CounterActionTypes,
-  CounterInitialStateType,
-} from "./types";
+import { CounterActions, CounterActionTypes, CounterState } from "./types";
 
-const initialCounterState: CounterInitialStateType = {
+const initialCounterState: CounterState = {
   counter: 0,
 };
 
