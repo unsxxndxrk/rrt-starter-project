@@ -5,6 +5,15 @@ import React from "react";
 import { CssBaseline, MuiThemeProvider } from "@material-ui/core";
 import { DefaultTheme } from "@material-ui/styles";
 import { Store } from "redux";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 type AppProvidersProps = {
   children: React.ReactNode;
@@ -19,8 +28,10 @@ const AppProviders = (props: AppProvidersProps) => {
   return (
     <Provider store={store}>
       <MuiThemeProvider theme={theme}>
-        <CssBaseline />
-        <Router history={history}>{children}</Router>
+        <QueryClientProvider client={queryClient}>
+          <CssBaseline />
+          <Router history={history}>{children}</Router>
+        </QueryClientProvider>
       </MuiThemeProvider>
     </Provider>
   );

@@ -5,8 +5,12 @@ import { API } from "utils/http-client";
 const { users } = apiEndpoints;
 
 class UsersApiService {
-  getUsers = () => {
-    return API.get<GetUsersResponsePayload>(users.getUsers);
+  getUsers = async () => {
+    const data = API.get<GetUsersResponsePayload>(users.getUsers);
+    await new Promise((res, rej) => {
+      setTimeout(() => res({}), 2000);
+    });
+    return data;
   };
 }
 

@@ -27,5 +27,17 @@
       "increase": "Увеличить",
       "decrease": "Уменьшить"
     }
+  },
+  "fetch_data_react_query": {
+    "label": "Получение данных при помощи React-Query",
+    "user": {
+      "name": "Имя",
+      "company": "Компания",
+      "email": "Емейл",
+      "street": "Улица"
+    },
+    "buttons": {
+      "refetch": "Перезагрузить данные"
+    }
   }
 }

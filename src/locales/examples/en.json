@@ -27,5 +27,17 @@
       "increase": "Increase",
       "decrease": "Decrease"
     }
+  },
+  "fetch_data_react_query": {
+    "label": "Fetch data with React-Query",
+    "user": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "street": "Street"
+    },
+    "buttons": {
+      "refetch": "Refetch data"
+    }
   }
 }

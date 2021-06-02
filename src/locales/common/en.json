@@ -3,5 +3,8 @@
     "home": "Home",
     "examples": "Examples",
     "about": "About"
+  },
+  "errors": {
+    "unexpected_error": "Something went wrong. Try again later."
   }
 }
