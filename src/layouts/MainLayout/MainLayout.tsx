@@ -1,4 +1,4 @@
-import { MainLayoutView } from "./MainLayoutView";
+import MainLayoutView from "./MainLayoutView";
 
 type MainLayoutProps = {
   children: React.ReactNode;
@@ -9,4 +9,4 @@ function MainLayout(props: MainLayoutProps) {
   return <MainLayoutView children={children} />;
 }
 
-export { MainLayout };
+export default MainLayout;

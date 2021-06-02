@@ -6,7 +6,7 @@ import { generalRoutes } from "constants/generalRoutes";
 import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useTranslation } from "react-i18next";
 import { Namespaces } from "i18n";
-import { MainLayout } from "layouts/MainLayout/MainLayout";
+import MainLayout from "layouts/MainLayout/MainLayout";
 
 function HomeView() {
   const { t } = useTranslation(Namespaces.Home);
@@ -39,4 +39,4 @@ function HomeView() {
   );
 }
 
-export { HomeView };
+export default HomeView;

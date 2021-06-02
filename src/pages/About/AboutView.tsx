@@ -2,7 +2,7 @@ import { Box, Typography } from "@material-ui/core";
 import { Namespaces } from "i18n";
 import { useAboutStyles } from "./About.styles";
 import { useTranslation } from "react-i18next";
-import { MainLayout } from "layouts/MainLayout/MainLayout";
+import MainLayout from "layouts/MainLayout/MainLayout";
 
 function AboutView() {
   const classes = useAboutStyles();
@@ -34,4 +34,4 @@ function AboutView() {
   );
 }
 
-export { AboutView };
+export default AboutView;

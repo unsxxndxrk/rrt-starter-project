@@ -1,7 +1,7 @@
-import { NotFoundView } from "./NotFoundView";
+import NotFoundView from "./NotFoundView";
 
 function NotFound() {
   return <NotFoundView />;
 }
 
-export { NotFound };
+export default NotFound;

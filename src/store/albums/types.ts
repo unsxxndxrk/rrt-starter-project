@@ -4,23 +4,11 @@ import {
   StoreDataStatusError,
 } from "types/store/StoreDataStatus";
 
-/*
-
-  Albums Actions
-
-*/
-
 export enum AlbumsActions {
   FETCH_ALBUMS_REQUEST = "albums/FETCH_ALBUMS_REQUEST",
   FETCH_ALBUMS_SUCCESS = "albums/FETCH_ALBUMS_SUCCESS",
   FETCH_ALBUMS_ERROR = "albums/FETCH_ALBUMS_ERROR",
 }
-
-/*
-
-  Albums Store Data
-
-*/
 
 export type AlbumsState = {
   albums: StoreDataStatus & {
@@ -36,12 +24,6 @@ export type AlbumStoreData = {
   title: string;
 };
 
-/*
-
-  Fetch Albums Data
-
-*/
-
 export type FetchAlbumsDataRequestAction = {
   type: AlbumsActions.FETCH_ALBUMS_REQUEST;
 };
@@ -55,12 +37,6 @@ export type FetchAlbumsDataErrorAction = {
   type: AlbumsActions.FETCH_ALBUMS_ERROR;
   payload: StoreDataStatusError;
 };
-
-/*
-
-  #
-
-*/
 
 export type AlbumsActionTypes =
   | FetchAlbumsDataRequestAction

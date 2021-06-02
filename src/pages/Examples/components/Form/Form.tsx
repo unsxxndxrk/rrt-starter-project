@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { formInitialValues, formValidationSchema } from "./Form.consts";
 import { FormValues } from "./Form.types";
-import { FormView } from "./FormView";
+import FormView from "./FormView";
 
 function Form() {
   const onFormSubmit = (data: FormValues) => {
@@ -22,4 +22,4 @@ function Form() {
   return <FormView {...formik} hasError={hasError} />;
 }
 
-export { Form };
+export default Form;

@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { counterActions } from "store/counter/actions";
 import { RootState } from "store";
-import { CounterView } from "./CounterView";
+import CounterView from "./CounterView";
 
 function Counter() {
   const { counter } = useSelector((state: RootState) => state.counter);
@@ -24,4 +24,4 @@ function Counter() {
   );
 }
 
-export { Counter };
+export default Counter;

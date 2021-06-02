@@ -43,4 +43,4 @@ function CounterView(props: CounterViewProps) {
   );
 }
 
-export { CounterView };
+export default CounterView;

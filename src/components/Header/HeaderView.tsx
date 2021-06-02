@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Box, Grid } from "@material-ui/core";
 import { Namespaces } from "i18n";
 import { useTranslation } from "react-i18next";
-import { LanguageChanger } from "components/LanguageChanger/LanguageChanger";
+import LanguageChanger from "components/LanguageChanger/LanguageChanger";
 
 function HeaderView() {
   const classes = useHeaderStyles();
@@ -35,4 +35,4 @@ function HeaderView() {
   );
 }
 
-export { HeaderView };
+export default HeaderView;

@@ -26,4 +26,4 @@ const AppProviders = (props: AppProvidersProps) => {
   );
 };
 
-export { AppProviders };
+export default AppProviders;

@@ -1,5 +1,5 @@
 import { useMainLayoutStyles } from "./MainLayout.styles";
-import { Header } from "components/Header/Header";
+import Header from "components/Header/Header";
 import { Box, Container, Divider } from "@material-ui/core";
 
 type MainLayoutViewProps = {
@@ -23,4 +23,4 @@ function MainLayoutView(props: MainLayoutViewProps) {
   );
 }
 
-export { MainLayoutView };
+export default MainLayoutView;

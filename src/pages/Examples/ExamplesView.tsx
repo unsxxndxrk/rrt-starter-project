@@ -2,9 +2,9 @@ import { Box, Typography } from "@material-ui/core";
 import { useExamplesStyles } from "./Examples.styles";
 import { useTranslation } from "react-i18next";
 import { Namespaces } from "i18n";
-import { Counter } from "./components/Counter/Counter";
-import { Form } from "./components/Form/Form";
-import { MainLayout } from "layouts/MainLayout/MainLayout";
+import Counter from "./components/Counter/Counter";
+import Form from "./components/Form/Form";
+import MainLayout from "layouts/MainLayout/MainLayout";
 
 function ExamplesView() {
   const classes = useExamplesStyles();
@@ -34,4 +34,4 @@ function ExamplesView() {
   );
 }
 
-export { ExamplesView };
+export default ExamplesView;

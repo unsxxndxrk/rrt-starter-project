@@ -77,4 +77,4 @@ function FormView(props: FormViewProps) {
   );
 }
 
-export { FormView };
+export default FormView;

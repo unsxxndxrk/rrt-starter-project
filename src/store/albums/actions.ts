@@ -1,12 +1,6 @@
 import { StoreDataStatusError } from "types/store/StoreDataStatus";
 import { AlbumsActions, AlbumsActionTypes, AlbumsStoreData } from "./types";
 
-/*
-
-  Fetch Albums Data
-
-*/
-
 const fetchAlbumsDataRequestAction = (): AlbumsActionTypes => ({
   type: AlbumsActions.FETCH_ALBUMS_REQUEST,
 });
@@ -24,12 +18,6 @@ const fetchAlbumsDataErrorAction = (
   type: AlbumsActions.FETCH_ALBUMS_ERROR,
   payload: error,
 });
-
-/*
-
-  #
-
-*/
 
 export const albumsActions = {
   fetchDataRequest: fetchAlbumsDataRequestAction,

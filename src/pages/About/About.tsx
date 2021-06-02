@@ -1,7 +1,7 @@
-import { AboutView } from "./AboutView";
+import AboutView from "./AboutView";
 
 function About() {
   return <AboutView />;
 }
 
-export { About };
+export default About;

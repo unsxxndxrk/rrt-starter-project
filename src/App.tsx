@@ -2,7 +2,7 @@ import { Routes } from "Routes";
 import { appTheme } from "theme";
 import { appHistory } from "appHistory";
 import { store } from "store";
-import { AppProviders } from "AppProviders";
+import AppProviders from "AppProviders";
 
 function App() {
   return (
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export { App };
+export default App;

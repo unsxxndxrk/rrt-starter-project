@@ -31,4 +31,4 @@ function LanguageChangerView(props: LanguageChangerViewProps) {
   );
 }
 
-export { LanguageChangerView };
+export default LanguageChangerView;

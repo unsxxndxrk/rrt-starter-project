@@ -1,7 +1,7 @@
 import { Languages } from "types/common/Languages";
 import { enumToStringArray } from "utils/enumToStringArray";
 import { useTranslation } from "react-i18next";
-import { LanguageChangerView } from "./LanguageChangerView";
+import LanguageChangerView from "./LanguageChangerView";
 
 function LanguageChanger() {
   const { i18n } = useTranslation();
@@ -22,4 +22,4 @@ function LanguageChanger() {
   );
 }
 
-export { LanguageChanger };
+export default LanguageChanger;

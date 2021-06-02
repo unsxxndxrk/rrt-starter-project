@@ -1,7 +1,7 @@
 import * as serviceWorker from "serviceWorker";
 import ReactDOM from "react-dom";
 import "index.scss";
-import { App } from "App";
+import App from "App";
 
 const rootElement = document.getElementById("root");
 

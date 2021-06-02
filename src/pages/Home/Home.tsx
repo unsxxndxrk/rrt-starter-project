@@ -1,7 +1,7 @@
-import { HomeView } from "./HomeView";
+import HomeView from "./HomeView";
 
 function Home() {
   return <HomeView />;
 }
 
-export { Home };
+export default Home;
