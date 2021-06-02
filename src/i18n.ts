@@ -2,7 +2,7 @@ import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
 import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector";
 import { uiLanguage } from "utils/storageHelpers";
-import { Languages } from "types/common/Languages";
+import { appLanguages } from "constants/appLanguages";
 import { APP_DEFAULT_LANGUAGE } from "constants/settings";
 import { enTranslations } from "locales/enTranslations";
 import { ruTranslations } from "locales/ruTranslations";
@@ -31,7 +31,7 @@ const createI18nInstance = ({
     .init({
       lng: language,
       fallbackLng: APP_DEFAULT_LANGUAGE,
-      supportedLngs: Object.values(Languages),
+      supportedLngs: Object.values(appLanguages),
       resources,
       ns: Object.values(Namespaces),
       load: "languageOnly",
