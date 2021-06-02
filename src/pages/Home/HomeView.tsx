@@ -3,14 +3,12 @@ import rrtLogo from "assets/images/RRT_MAIN.svg";
 import { Box, Button, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { generalRoutes } from "constants/generalRoutes";
-import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useTranslation } from "react-i18next";
 import { Namespaces } from "i18n";
 
 function HomeView() {
   const { t } = useTranslation(Namespaces.Home);
   const classes = useHomeStyles();
-  const secondaryButtonStyles = useSecondaryButtonStyles();
 
   return (
     <Box>
@@ -27,7 +25,7 @@ function HomeView() {
       </div>
       <div className={classes.buttonBox}>
         <Link to={generalRoutes.ABOUT}>
-          <Button variant="contained" className={secondaryButtonStyles.root}>
+          <Button variant="contained" color="secondary">
             {t("buttons.about")}
           </Button>
         </Link>

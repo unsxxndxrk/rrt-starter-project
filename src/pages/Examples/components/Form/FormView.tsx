@@ -1,7 +1,6 @@
 import { Button, TextField } from "@material-ui/core";
 import { FormikProps } from "formik";
 import { Namespaces } from "i18n";
-import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useFormStyles } from "./Form.styles";
 import { FormValues } from "./Form.types";
 import { useTranslation } from "react-i18next";
@@ -22,7 +21,6 @@ function FormView(props: FormViewProps) {
 
   const { t } = useTranslation(Namespaces.Examples);
   const classes = useFormStyles();
-  const secondaryButtonStyles = useSecondaryButtonStyles();
 
   return (
     <form onSubmit={handleSubmit} className={classes.form}>
@@ -65,11 +63,7 @@ function FormView(props: FormViewProps) {
         )}
       </div>
       <div className={classes.formGroup}>
-        <Button
-          type="submit"
-          variant="contained"
-          className={secondaryButtonStyles.root}
-        >
+        <Button type="submit" variant="contained" color="secondary">
           {t("form.buttons.submit")}
         </Button>
       </div>

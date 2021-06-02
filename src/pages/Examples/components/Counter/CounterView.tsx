@@ -1,6 +1,5 @@
 import { Box, Button } from "@material-ui/core";
 import { Namespaces } from "i18n";
-import { useSecondaryButtonStyles } from "styles/SecondaryButton";
 import { useCounterStyles } from "./Counter.styles";
 import { useTranslation } from "react-i18next";
 
@@ -14,7 +13,6 @@ function CounterView(props: CounterViewProps) {
   const { counter, onIncrease, onDecrease } = props;
   const { t } = useTranslation(Namespaces.Examples);
   const classes = useCounterStyles();
-  const secondaryButtonStyles = useSecondaryButtonStyles();
 
   return (
     <Box className={classes.root}>
@@ -25,7 +23,7 @@ function CounterView(props: CounterViewProps) {
         <Button
           type="button"
           variant="contained"
-          className={secondaryButtonStyles.root}
+          color="secondary"
           onClick={onDecrease}
         >
           {t("counter.buttons.decrease")}
@@ -33,7 +31,7 @@ function CounterView(props: CounterViewProps) {
         <Button
           type="button"
           variant="contained"
-          className={secondaryButtonStyles.root}
+          color="secondary"
           onClick={onIncrease}
         >
           {t("counter.buttons.increase")}
