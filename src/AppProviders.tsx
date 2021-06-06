@@ -1,7 +1,7 @@
+import React from "react";
 import { Router, RouterProps } from "react-router";
 import { Provider } from "react-redux";
 import { RootState } from "store";
-import React from "react";
 import { CssBaseline, MuiThemeProvider } from "@material-ui/core";
 import { DefaultTheme } from "@material-ui/styles";
 import { Store } from "redux";
