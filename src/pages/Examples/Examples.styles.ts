@@ -1,6 +1,6 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useExamplesStyles = makeStyles((theme: Theme) => ({
+const useExamplesStyles = makeStyles({
   root: {
     paddingTop: "50px",
   },
@@ -18,6 +18,6 @@ const useExamplesStyles = makeStyles((theme: Theme) => ({
   exampleBox: {
     paddingTop: "30px",
   },
-}));
+});
 
 export { useExamplesStyles };

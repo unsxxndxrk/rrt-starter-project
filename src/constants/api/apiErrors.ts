@@ -1,5 +1,5 @@
 enum ApiError {
-  Unexpected = "unexpected_error",
+  Unexpected = "unexpected",
 }
 
 export { ApiError };

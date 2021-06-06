@@ -1,6 +1,6 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useFetchDataReactQueryStyles = makeStyles((theme: Theme) => ({
+const useFetchDataReactQueryStyles = makeStyles({
   root: {
     padding: "10px 30px",
   },
@@ -21,6 +21,6 @@ const useFetchDataReactQueryStyles = makeStyles((theme: Theme) => ({
     margin: "0 auto",
     display: "block",
   },
-}));
+});
 
 export { useFetchDataReactQueryStyles };

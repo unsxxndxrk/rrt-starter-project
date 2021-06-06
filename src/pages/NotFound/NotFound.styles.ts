@@ -1,6 +1,6 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useNotFoundStyles = makeStyles((theme: Theme) => ({
+const useNotFoundStyles = makeStyles({
   root: {
     height: "100vh",
     width: "100vw",
@@ -14,6 +14,6 @@ const useNotFoundStyles = makeStyles((theme: Theme) => ({
     fontSize: "200px",
     fontWeight: "bold",
   },
-}));
+});
 
 export { useNotFoundStyles };

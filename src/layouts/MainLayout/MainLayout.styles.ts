@@ -1,9 +1,9 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useMainLayoutStyles = makeStyles((theme: Theme) => ({
+const useMainLayoutStyles = makeStyles({
   content: {
     padding: "30px 0",
   },
-}));
+});
 
 export { useMainLayoutStyles };

@@ -5,14 +5,14 @@
       "email": {
         "placeholder": "Email",
         "errors": {
-          "required": "Should not be empty",
+          "required": "Provide your email",
           "invalid_email_format": "Invalid email format"
         }
       },
       "password": {
         "placeholder": "Password",
         "errors": {
-          "required": "Should not be empty",
+          "required": "Provide your password",
           "invalid_password_format": "Password must contain at least 8 characters, one uppercase letter, one lowercase letter and a digit"
         }
       }

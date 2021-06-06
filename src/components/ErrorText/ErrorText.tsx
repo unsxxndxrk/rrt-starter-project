@@ -17,11 +17,7 @@ function ErrorText(props: ErrorTextProps) {
 
   return (
     <div className={rootClasses}>
-      {type === "unexpected"
-        ? t("errors.unexpected_error")
-        : text
-        ? text
-        : null}
+      {type === "unexpected" ? t("errors.unexpected") : text ? text : null}
     </div>
   );
 }

@@ -1,6 +1,6 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useHomeStyles = makeStyles((theme: Theme) => ({
+const useHomeStyles = makeStyles({
   h1: {
     fontSize: "40px",
   },
@@ -27,6 +27,6 @@ const useHomeStyles = makeStyles((theme: Theme) => ({
     width: "700px",
     fontSize: "18px",
   },
-}));
+});
 
 export { useHomeStyles };

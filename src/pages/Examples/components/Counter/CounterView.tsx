@@ -15,7 +15,7 @@ function CounterView(props: CounterViewProps) {
   const classes = useCounterStyles();
 
   return (
-    <Box className={classes.root}>
+    <Box>
       <div className={classes.counterBox}>
         <div className={classes.counter}>{counter}</div>
       </div>

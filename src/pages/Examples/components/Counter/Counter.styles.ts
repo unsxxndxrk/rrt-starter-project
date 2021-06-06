@@ -1,7 +1,6 @@
-import { makeStyles, Theme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useCounterStyles = makeStyles((theme: Theme) => ({
-  root: {},
+const useCounterStyles = makeStyles({
   counterBox: {
     marginBottom: "15px",
   },
@@ -21,6 +20,6 @@ const useCounterStyles = makeStyles((theme: Theme) => ({
       margin: "0 5px",
     },
   },
-}));
+});
 
 export { useCounterStyles };

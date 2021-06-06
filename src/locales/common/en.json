@@ -5,6 +5,6 @@
     "about": "About"
   },
   "errors": {
-    "unexpected_error": "Something went wrong. Try again later."
+    "unexpected": "Something went wrong. Try again later."
   }
 }
