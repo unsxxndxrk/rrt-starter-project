@@ -1,4 +1,4 @@
-import { ApiError } from "constants/apiErrors";
+import { ApiError } from "constants/api/apiErrors";
 
 export type StoreQueryDataStatusError = {
   message: ApiError;

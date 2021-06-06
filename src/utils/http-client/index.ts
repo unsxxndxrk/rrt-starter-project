@@ -1,6 +1,6 @@
 import axios, { AxiosResponse } from "axios";
-import { ApiError } from "constants/apiErrors";
-import { jsonHeaders } from "constants/jsonHeaders";
+import { ApiError } from "constants/api/apiErrors";
+import { jsonHeaders } from "constants/api/jsonHeaders";
 import { API_ENDPOINT } from "constants/settings";
 import { ApiResponseType } from "types/api/ApiResponseType";
 

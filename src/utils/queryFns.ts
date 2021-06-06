@@ -1,4 +1,4 @@
-import { QueryKeys } from "constants/queryKeys";
+import { QueryKeys } from "constants/api/queryKeys";
 import { UsersApiService } from "services/UsersApiService";
 
 export const fetchUsers = {

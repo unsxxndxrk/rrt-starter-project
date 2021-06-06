@@ -1,4 +1,4 @@
-import { apiEndpoints } from "constants/apiEndpoints";
+import { apiEndpoints } from "constants/api/apiEndpoints";
 import { GetUsersResponsePayload } from "types/api/users/GetUsersResponsePayload";
 import { API } from "utils/http-client";
 
