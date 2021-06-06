@@ -1,7 +1,7 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 
 const useRRTCircularProgressStyles = makeStyles((theme: Theme) => ({
-  spinnerWrap: {
+  root: {
     display: "flex",
     width: "100%",
     justifyContent: "center",

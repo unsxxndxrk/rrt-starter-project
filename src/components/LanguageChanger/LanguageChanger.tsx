@@ -1,10 +1,10 @@
+import { useLanguageChangerStyles } from "./LanguageChanger.styles";
+import cx from "classnames";
 import { appLanguages } from "constants/appLanguages";
 import { useTranslation } from "react-i18next";
-import LanguageChangerView from "./LanguageChangerView";
 
 function LanguageChanger() {
   const { i18n } = useTranslation();
-
   const languages = Object.values(appLanguages);
   const currentLanguage = i18n.language;
 
@@ -12,12 +12,24 @@ function LanguageChanger() {
     i18n.changeLanguage(nextLang);
   };
 
+  const classes = useLanguageChangerStyles();
+
   return (
-    <LanguageChangerView
-      appLanguages={languages}
-      currentLanguage={currentLanguage}
-      onLanguageChange={handgeLanguageChange}
-    />
+    <div className={classes.root}>
+      {languages.map((lang, key) => (
+        <div className={classes.langWrap} key={key}>
+          <div
+            className={cx(classes.lang, {
+              active: currentLanguage === lang,
+            })}
+            onClick={() => handgeLanguageChange(lang)}
+          >
+            {lang}
+          </div>
+          {languages.length - 1 !== languages.indexOf(lang) && <>|</>}
+        </div>
+      ))}
+    </div>
   );
 }
 
