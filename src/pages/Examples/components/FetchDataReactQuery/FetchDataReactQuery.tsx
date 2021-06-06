@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useQuery, useQueryClient } from "react-query";
-import { fetchUsers } from "utils/queryFns";
+import { fetchUsers } from "utils/api/queryFns";
 import FetchDataReactQueryView from "./FetchDataReactQueryView";
 
 function FetchDataReactQuery() {

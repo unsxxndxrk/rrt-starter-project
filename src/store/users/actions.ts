@@ -1,4 +1,4 @@
-import { StoreQueryDataStatusError } from "types/store/StoreQueryDataStatus";
+import { StoreQueryDataStatusError } from "types/store/StoreQueryData";
 import { UsersActions, UsersActionTypes, UsersStoreData } from "./types";
 
 const fetchUsersDataRequestAction = (): UsersActionTypes => ({

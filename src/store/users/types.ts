@@ -1,8 +1,8 @@
 import { User } from "types/api/users/User";
 import {
-  StoreQueryDataStatus,
+  StoreQueryData,
   StoreQueryDataStatusError,
-} from "types/store/StoreQueryDataStatus";
+} from "types/store/StoreQueryData";
 
 export enum UsersActions {
   FETCH_USERS_REQUEST = "users/FETCH_USERS_REQUEST",
@@ -11,9 +11,7 @@ export enum UsersActions {
 }
 
 export type UsersState = {
-  users: StoreQueryDataStatus & {
-    data: UsersStoreData | null;
-  };
+  users: StoreQueryData<UsersStoreData | null>;
 };
 
 export type UsersStoreData = User[];

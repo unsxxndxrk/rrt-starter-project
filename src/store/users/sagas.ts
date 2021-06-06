@@ -3,7 +3,7 @@ import { takeLatest, call, put } from "redux-saga/effects";
 import { UsersApiService } from "services/UsersApiService";
 import { GetUsersResponsePayload } from "types/api/users/GetUsersResponsePayload";
 import { ApiClientError } from "types/api/ApiClientError";
-import { selectApiError } from "utils/selectApiError";
+import { selectApiError } from "utils/api/selectApiError";
 import { usersActions } from "./actions";
 import { UsersActions } from "./types";
 

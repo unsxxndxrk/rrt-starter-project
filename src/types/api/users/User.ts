@@ -1,4 +1,4 @@
-import { EntityId } from "types/common/EntityId";
+import { EntityId } from "types/EntityId";
 
 export type User = {
   id: EntityId;

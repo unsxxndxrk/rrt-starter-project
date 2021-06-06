@@ -4,7 +4,11 @@ export type StoreQueryDataStatusError = {
   message: ApiError;
 };
 
-export type StoreQueryDataStatus = {
+type StoreQueryDataStatus = {
   fetching: boolean;
   error: StoreQueryDataStatusError | null;
+};
+
+export type StoreQueryData<T> = StoreQueryDataStatus & {
+  data: T;
 };
