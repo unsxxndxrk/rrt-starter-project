@@ -1,10 +1,10 @@
 const buildSuccessfulResponsePayload = require("./utils/buildSuccessfulResponsePayload");
+const _ = require("lodash");
 
 const getUsers = (res, usersData) => {
   res.setHeader("Content-Type", "application/json");
-  res.end(
-    JSON.stringify(buildSuccessfulResponsePayload(JSON.parse(usersData))),
-  );
+  const shuffledData = _.shuffle(JSON.parse(usersData));
+  res.end(JSON.stringify(buildSuccessfulResponsePayload(shuffledData)));
   res.end();
 };
 
