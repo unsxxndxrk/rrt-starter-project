@@ -1,4 +1,4 @@
-import { StoreQueryDataStatusError } from "types/store/StoreQueryData";
+import { ApiError } from "constants/api/apiErrors";
 import { UsersActions, UsersActionTypes, UsersStoreData } from "./types";
 
 const fetchUsersDataRequestAction = (): UsersActionTypes => ({
@@ -12,9 +12,7 @@ const fetchUsersDataSuccessAction = (
   payload: data,
 });
 
-const fetchUsersDataErrorAction = (
-  error: StoreQueryDataStatusError,
-): UsersActionTypes => ({
+const fetchUsersDataErrorAction = (error: ApiError): UsersActionTypes => ({
   type: UsersActions.FETCH_USERS_ERROR,
   payload: error,
 });

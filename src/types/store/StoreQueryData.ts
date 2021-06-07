@@ -1,6 +1,6 @@
 import { ApiError } from "constants/api/apiErrors";
 
-export type StoreQueryDataStatusError = {
+type StoreQueryDataStatusError = {
   message: ApiError;
 };
 

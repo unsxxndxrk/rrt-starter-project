@@ -37,7 +37,9 @@ export function users(
         users: {
           data: null,
           fetching: false,
-          error: action.payload,
+          error: {
+            message: action.payload,
+          },
         },
       };
     default:

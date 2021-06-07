@@ -1,16 +1,14 @@
+import { API } from "utils/api/http-client";
 import { apiEndpoints } from "constants/api/apiEndpoints";
 import { GetUsersResponsePayload } from "types/api/users/GetUsersResponsePayload";
-import { API } from "utils/api/http-client";
+import { delay } from "utils/delay";
 
 const { users } = apiEndpoints;
 
 class UsersApiService {
   getUsers = async () => {
-    const data = API.get<GetUsersResponsePayload>(users.getUsers);
-    await new Promise((res) => {
-      setTimeout(() => res({}), 2000);
-    });
-    return data;
+    await delay();
+    return API.get<GetUsersResponsePayload>(users.getUsers);
   };
 }
 

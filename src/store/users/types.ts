@@ -1,8 +1,6 @@
+import { ApiError } from "constants/api/apiErrors";
 import { User } from "types/api/users/User";
-import {
-  StoreQueryData,
-  StoreQueryDataStatusError,
-} from "types/store/StoreQueryData";
+import { StoreQueryData } from "types/store/StoreQueryData";
 
 export enum UsersActions {
   FETCH_USERS_REQUEST = "users/FETCH_USERS_REQUEST",
@@ -27,7 +25,7 @@ export type FetchUsersDataSuccessAction = {
 
 export type FetchUsersDataErrorAction = {
   type: UsersActions.FETCH_USERS_ERROR;
-  payload: StoreQueryDataStatusError;
+  payload: ApiError;
 };
 
 export type UsersActionTypes =

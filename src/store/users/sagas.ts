@@ -17,9 +17,7 @@ export function* fetchUsersData() {
     console.error(e);
     const error = e as ApiClientError;
     yield put(
-      usersActions.fetchDataError({
-        message: selectApiError(error.response?.data.message),
-      }),
+      usersActions.fetchDataError(selectApiError(error.response?.data.message)),
     );
   }
 }

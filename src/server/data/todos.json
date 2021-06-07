@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Learn HTML"
+  },
+  {
+    "id": "2",
+    "name": "Learn CSS"
+  },
+  {
+    "id": "3",
+    "name": "Learn JavaScript"
+  },
+  {
+    "id": "4",
+    "name": "Learn React JS"
+  },
+  {
+    "id": "5",
+    "name": "Learn TypeScript"
+  },
+  {
+    "id": "6",
+    "name": "Learn Redux"
+  },
+  {
+    "id": "7",
+    "name": "Learn Redux-Saga"
+  },
+  {
+    "id": "8",
+    "name": "Find a good job"
+  },
+  {
+    "id": "9",
+    "name": "Take a rest"
+  },
+  {
+    "id": "10",
+    "name": "Throw out the trash"
+  }
+]
