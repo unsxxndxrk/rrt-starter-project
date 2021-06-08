@@ -1,5 +1,9 @@
 import React from "react";
-import { render as rtlRender, RenderOptions } from "@testing-library/react";
+import {
+  render as rtlRender,
+  RenderOptions,
+  RenderResult,
+} from "@testing-library/react";
 import { Queries } from "@testing-library/dom";
 import { configureStore, StoreInitialState } from "store";
 import AppProviders from "AppProviders";
@@ -27,7 +31,7 @@ function render<Q extends Queries>(
     initialState?: StoreInitialState;
     store?: ReturnType<typeof configureStore>;
   } = {},
-) {
+): RenderResult<Q, HTMLElement> {
   const Wrapper: React.FunctionComponent = ({ children }) => {
     return (
       <StylesProvider generateClassName={generateClassName}>

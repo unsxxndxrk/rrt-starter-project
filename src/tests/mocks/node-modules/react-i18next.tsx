@@ -8,9 +8,7 @@ jest.mock("react-i18next", () => {
         t: (key: string) => key,
         i18n: {
           language: "en",
-          changeLanguage: jest
-            .fn()
-            .mockImplementation((lang) => console.log(lang)),
+          changeLanguage: () => new Promise(() => {}),
         },
       };
       return Component;
@@ -20,9 +18,7 @@ jest.mock("react-i18next", () => {
         t: (key: string) => key,
         i18n: {
           language: "en",
-          changeLanguage: jest
-            .fn()
-            .mockImplementation((lang) => console.log(lang)),
+          changeLanguage: () => new Promise(() => {}),
         },
       };
     },

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LanguageChanger /> should render LanguageChanger component 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-root"
+  >
+    <div
+      class="makeStyles-langWrap"
+    >
+      <div
+        class="makeStyles-lang active"
+      >
+        en
+      </div>
+      |
+    </div>
+    <div
+      class="makeStyles-langWrap"
+    >
+      <div
+        class="makeStyles-lang"
+      >
+        ru
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
