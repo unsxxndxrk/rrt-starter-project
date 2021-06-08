@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> should render Header component 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root makeStyles-root"
+  >
+    <div
+      class="MuiGrid-root makeStyles-nav MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          href="/"
+        >
+          navigation.home
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          href="/examples"
+        >
+          navigation.examples
+        </a>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item"
+      >
+        <a
+          href="/about"
+        >
+          navigation.about
+        </a>
+      </div>
+    </div>
+    <div
+      class="makeStyles-root"
+    >
+      <div
+        class="makeStyles-langWrap"
+      >
+        <div
+          class="makeStyles-lang active"
+        >
+          en
+        </div>
+        |
+      </div>
+      <div
+        class="makeStyles-langWrap"
+      >
+        <div
+          class="makeStyles-lang"
+        >
+          ru
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
