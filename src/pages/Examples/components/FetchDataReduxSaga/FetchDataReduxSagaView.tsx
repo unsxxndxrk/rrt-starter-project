@@ -21,18 +21,18 @@ function FetchDataReduxSagaView(props: FetchDataReduxSagaViewProps) {
   return (
     <RRTSpin spinning={fetching}>
       <div className={classes.root}>
-        {!data ? (
+        {!data && !error ? (
           <div className={classes.empty}>
             {t("fetch_data_redux_saga.empty")}
           </div>
         ) : error ? (
           <ErrorText type="unexpected" />
-        ) : (
+        ) : data ? (
           <div className={classes.todo}>
             {t("fetch_data_redux_saga.todo")}&nbsp;
             <b>{data.name}</b>
           </div>
-        )}
+        ) : null}
       </div>
       <Button
         disabled={fetching}
