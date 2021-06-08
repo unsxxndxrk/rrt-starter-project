@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should render App component 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg"
+    >
+      <div
+        class="MuiBox-root MuiBox-root makeStyles-root"
+      >
+        <div
+          class="MuiGrid-root makeStyles-nav MuiGrid-container MuiGrid-spacing-xs-5 MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item"
+          >
+            <a
+              href="/"
+            >
+              Home
+            </a>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item"
+          >
+            <a
+              href="/examples"
+            >
+              Examples
+            </a>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item"
+          >
+            <a
+              href="/about"
+            >
+              About
+            </a>
+          </div>
+        </div>
+        <div
+          class="makeStyles-root"
+        >
+          <div
+            class="makeStyles-langWrap"
+          >
+            <div
+              class="makeStyles-lang active"
+            >
+              en
+            </div>
+            |
+          </div>
+          <div
+            class="makeStyles-langWrap"
+          >
+            <div
+              class="makeStyles-lang"
+            >
+              ru
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        class="MuiDivider-root"
+      />
+      <main>
+        <div
+          class="makeStyles-content"
+        >
+          <div
+            class="MuiBox-root MuiBox-root"
+          >
+            <div
+              class="makeStyles-logoWrap"
+            >
+              <img
+                alt="rrt"
+                src="RRT_MAIN.svg"
+              />
+            </div>
+            <h1
+              class="MuiTypography-root MuiTypography-h1 MuiTypography-alignCenter"
+            >
+              ReactJS, Redux, TypeScript
+            </h1>
+            <div
+              class="makeStyles-textWrap"
+            >
+              <p
+                class="MuiTypography-root makeStyles-text MuiTypography-body1 MuiTypography-alignCenter"
+              >
+                Starter project for developing user interfaces
+              </p>
+            </div>
+            <div
+              class="makeStyles-buttonBox"
+            >
+              <a
+                href="/about"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    About
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</DocumentFragment>
+`;
