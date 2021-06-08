@@ -13,6 +13,8 @@ type ErrorTextProps = {
 function ErrorText(props: ErrorTextProps) {
   const { text, className, type, variant } = props;
   const classes = useErrorTextStyles();
+  const { t } = useTranslation(Namespaces.Common);
+
   const rootClasses = cx(
     classes.root,
     {
@@ -20,7 +22,6 @@ function ErrorText(props: ErrorTextProps) {
     },
     className,
   );
-  const { t } = useTranslation(Namespaces.Common);
 
   return (
     <div className={rootClasses}>

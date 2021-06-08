@@ -5,14 +5,13 @@ import { useTranslation } from "react-i18next";
 
 function LanguageChanger() {
   const { i18n } = useTranslation();
+  const classes = useLanguageChangerStyles();
   const languages = Object.values(appLanguages);
   const currentLanguage = i18n.language;
 
   const handgeLanguageChange = (nextLang: string) => {
     i18n.changeLanguage(nextLang);
   };
-
-  const classes = useLanguageChangerStyles();
 
   return (
     <div className={classes.root}>

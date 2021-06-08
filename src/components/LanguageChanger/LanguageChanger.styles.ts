@@ -22,6 +22,7 @@ const useLanguageChangerStyles = makeStyles((theme: Theme) => ({
     },
     "&.active": {
       color: theme.palette.primary.main,
+      fontWeight: "bold",
     },
   },
 }));
