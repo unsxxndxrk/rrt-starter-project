@@ -1,40 +1,40 @@
-import { UsersActions, UsersActionTypes, UsersState } from "./types";
+import { TodoActions, TodoActionTypes, TodoState } from "./types";
 
-export const initialUsersState: UsersState = {
-  users: {
+export const initialTodoState: TodoState = {
+  todo: {
     data: null,
     fetching: false,
     error: null,
   },
 };
 
-export function users(
-  state = initialUsersState,
-  action: UsersActionTypes,
-): UsersState {
+export function todo(
+  state = initialTodoState,
+  action: TodoActionTypes,
+): TodoState {
   switch (action.type) {
-    case UsersActions.FETCH_USERS_REQUEST:
+    case TodoActions.FETCH_TODO_REQUEST:
       return {
         ...state,
-        users: {
-          ...state.users,
+        todo: {
+          ...state.todo,
           fetching: true,
           error: null,
         },
       };
-    case UsersActions.FETCH_USERS_SUCCESS:
+    case TodoActions.FETCH_TODO_SUCCESS:
       return {
         ...state,
-        users: {
+        todo: {
           data: action.payload,
           fetching: false,
           error: null,
         },
       };
-    case UsersActions.FETCH_USERS_ERROR:
+    case TodoActions.FETCH_TODO_ERROR:
       return {
         ...state,
-        users: {
+        todo: {
           data: null,
           fetching: false,
           error: {

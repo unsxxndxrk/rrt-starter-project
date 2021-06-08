@@ -1,8 +1,8 @@
 import { all } from "redux-saga/effects";
-import { usersSaga } from "./users/sagas";
+import { todoSaga } from "./todo/sagas";
 
 function* rootSaga() {
-  yield all([usersSaga()]);
+  yield all([todoSaga()]);
 }
 
 export { rootSaga };
