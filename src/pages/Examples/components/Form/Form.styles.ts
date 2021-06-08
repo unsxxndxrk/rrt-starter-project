@@ -18,10 +18,6 @@ const useFormStyles = makeStyles((theme: Theme) => ({
       },
     },
   },
-  errorLine: {
-    color: theme.palette.error.main,
-    paddingTop: "5px",
-  },
 }));
 
 export { useFormStyles };

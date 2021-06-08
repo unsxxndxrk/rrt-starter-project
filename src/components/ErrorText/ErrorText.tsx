@@ -7,12 +7,19 @@ type ErrorTextProps = {
   text?: string;
   className?: string;
   type?: "unexpected";
+  variant?: "tiny";
 };
 
 function ErrorText(props: ErrorTextProps) {
-  const { text, className, type } = props;
+  const { text, className, type, variant } = props;
   const classes = useErrorTextStyles();
-  const rootClasses = cx(classes.root, className);
+  const rootClasses = cx(
+    classes.root,
+    {
+      [classes.tiny]: variant === "tiny",
+    },
+    className,
+  );
   const { t } = useTranslation(Namespaces.Common);
 
   return (

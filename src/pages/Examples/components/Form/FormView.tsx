@@ -4,6 +4,7 @@ import { Namespaces } from "i18n";
 import { useFormStyles } from "./Form.styles";
 import { FormValues } from "./Form.types";
 import { useTranslation } from "react-i18next";
+import ErrorText from "components/ErrorText/ErrorText";
 
 type FormViewProps = FormikProps<FormValues> & {
   hasError: (name: keyof FormValues) => boolean;
@@ -38,9 +39,10 @@ function FormView(props: FormViewProps) {
           onBlur={handleBlur}
         />
         {hasError("email") && (
-          <div className={classes.errorLine}>
-            {t(`form.fields.email.errors.${errors.email}`)}
-          </div>
+          <ErrorText
+            variant="tiny"
+            text={t(`form.fields.email.errors.${errors.email}`)}
+          />
         )}
       </div>
       <div className={classes.formGroup}>
@@ -57,9 +59,10 @@ function FormView(props: FormViewProps) {
           onBlur={handleBlur}
         />
         {hasError("password") && (
-          <div className={classes.errorLine}>
-            {t(`form.fields.password.errors.${errors.password}`)}
-          </div>
+          <ErrorText
+            variant="tiny"
+            text={t(`form.fields.password.errors.${errors.password}`)}
+          />
         )}
       </div>
       <div className={classes.formGroup}>

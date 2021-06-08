@@ -8,6 +8,10 @@ const useErrorTextStyles = makeStyles((theme: Theme) => ({
     padding: "10px 0",
     textAlign: "left",
   },
+  tiny: {
+    fontSize: "13px",
+    padding: "5px 0",
+  },
 }));
 
 export { useErrorTextStyles };

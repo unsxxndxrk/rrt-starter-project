@@ -12,9 +12,13 @@ type FetchDataReduxSagaViewProps = {
 };
 
 function FetchDataReduxSagaView(props: FetchDataReduxSagaViewProps) {
-  const { todoState, handleFetchData } = props;
-  const { todo } = todoState;
-  const { data, fetching, error } = todo;
+  const {
+    todoState: {
+      todo: { data, fetching, error },
+    },
+    handleFetchData,
+  } = props;
+
   const { t } = useTranslation([Namespaces.Examples, Namespaces.Common]);
   const classes = useFetchDataReduxSagaStyles();
 
