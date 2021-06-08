@@ -14,7 +14,7 @@ function AboutView() {
       </Typography>
       <Typography
         component="p"
-        className={classes.p}
+        className={classes.description}
         data-i18n="[html]content.body"
       >
         {t("description")}
@@ -23,7 +23,7 @@ function AboutView() {
         href="https://github.com/unsxxndxrk/rrt-starter-project"
         target="_blank"
         rel="noopener noreferrer"
-        className={classes.a}
+        className={classes.link}
       >
         {t("repository")}
       </a>

@@ -1,7 +1,7 @@
 import { makeStyles, Theme } from "@material-ui/core/styles";
 
 const useAboutStyles = makeStyles((theme: Theme) => ({
-  p: {
+  description: {
     marginTop: "15px",
     maxWidth: "500px",
 
@@ -9,7 +9,7 @@ const useAboutStyles = makeStyles((theme: Theme) => ({
       color: theme.palette.primary.main,
     },
   },
-  a: {
+  link: {
     color: theme.palette.secondary.main,
     marginTop: "15px",
     display: "block",

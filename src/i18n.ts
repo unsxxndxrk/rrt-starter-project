@@ -17,6 +17,7 @@ export enum Namespaces {
   Home = "home",
   Examples = "examples",
   About = "about",
+  NotFound = "notFound",
 }
 
 const createI18nInstance = ({
