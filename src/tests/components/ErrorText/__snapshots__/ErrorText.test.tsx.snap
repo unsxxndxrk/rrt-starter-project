@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ErrorText /> should render ErrorText component with custom text 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-root"
+  >
+    error_mock
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<ErrorText /> should render ErrorText component with unexpected error 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-root"
+  >
+    errors.unexpected
+  </div>
+</DocumentFragment>
+`;
