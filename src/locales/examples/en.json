@@ -39,5 +39,14 @@
     "buttons": {
       "refetch": "Refetch data"
     }
+  },
+  "fetch_data_redux_saga": {
+    "label": "Fetch data with Redux-Saga",
+    "todo": "Your todo is:",
+    "empty": "No todos yet",
+    "buttons": {
+      "fetch": "Fetch data",
+      "refetch": "Refetch data"
+    }
   }
 }

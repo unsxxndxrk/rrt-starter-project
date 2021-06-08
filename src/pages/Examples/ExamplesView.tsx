@@ -5,6 +5,7 @@ import { Namespaces } from "i18n";
 import Counter from "./components/Counter/Counter";
 import Form from "./components/Form/Form";
 import FetchDataReactQuery from "./components/FetchDataReactQuery/FetchDataReactQuery";
+import FetchDataReduxSaga from "./components/FetchDataReduxSaga/FetchDataReduxSaga";
 
 function ExamplesView() {
   const classes = useExamplesStyles();
@@ -34,6 +35,14 @@ function ExamplesView() {
         </Typography>
         <div className={classes.exampleBox}>
           <FetchDataReactQuery />
+        </div>
+      </div>
+      <div className={classes.example}>
+        <Typography component="h2" variant="h2" align="center">
+          {t("fetch_data_redux_saga.label")}
+        </Typography>
+        <div className={classes.exampleBox}>
+          <FetchDataReduxSaga />
         </div>
       </div>
     </Box>
