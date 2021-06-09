@@ -30,7 +30,7 @@ function FetchDataReduxSagaView(props: FetchDataReduxSagaViewProps) {
             {t("fetch_data_redux_saga.empty")}
           </div>
         ) : error ? (
-          <ErrorText type="unexpected" />
+          <ErrorText className={classes.error} type="unexpected" />
         ) : data ? (
           <div className={classes.todo}>
             {t("fetch_data_redux_saga.todo")}&nbsp;

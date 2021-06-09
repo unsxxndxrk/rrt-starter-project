@@ -25,7 +25,7 @@ function FetchDataReactQueryView(props: FetchDataReactQueryViewProps) {
       {isLoading ? (
         <RRTCircularProgress keepHeight="469px" />
       ) : isError ? (
-        <ErrorText type="unexpected" />
+        <ErrorText className={classes.error} type="unexpected" />
       ) : users ? (
         <>
           <RRTSpin spinning={isFetching}>

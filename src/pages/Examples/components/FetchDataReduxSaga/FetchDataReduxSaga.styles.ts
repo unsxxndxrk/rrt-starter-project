@@ -25,6 +25,9 @@ const useFetchDataReduxSagaStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
+  error: {
+    marginBottom: "25px",
+  },
 });
 
 export { useFetchDataReduxSagaStyles };

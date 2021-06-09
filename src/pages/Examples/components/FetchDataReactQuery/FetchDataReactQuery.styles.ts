@@ -21,6 +21,9 @@ const useFetchDataReactQueryStyles = makeStyles({
     margin: "0 auto",
     display: "block",
   },
+  error: {
+    textAlign: "center",
+  },
 });
 
 export { useFetchDataReactQueryStyles };
